@@ -28,21 +28,21 @@ function loadAlert() {
 // const height = con1.offsetHeight;
 // console.log(height);
 
-window.addEventListener("scroll", function () {
-  // const sideBtna = this.document.querySelector(".sideBtn a");
-  // const sideBtn = this.document.querySelector(".sideBtn");
-  // const triggerHeight = 2000;
-  // if (this.window.scrollY > 200) {
-  //   sideBtna.style.opacity = "1";
-  // } else {
-  //   sideBtna.style.opacity = "0";
-  // }
-  // if (this.window.pageYOffset > triggerHeight) {
-  //   sideBtn.classList.add("on");
-  // } else {
-  //   sideBtn.classList.remove("on");
-  // }
-});
+// window.addEventListener("scroll", function () {
+//   const sideBtna = this.document.querySelector(".sideBtn a");
+//   const sideBtn = this.document.querySelector(".sideBtn");
+//   const triggerHeight = 2000;
+//   if (this.window.scrollY > 200) {
+//     sideBtna.style.opacity = "1";
+//   } else {
+//     sideBtna.style.opacity = "0";
+//   }
+//   if (this.window.pageYOffset > triggerHeight) {
+//     sideBtn.classList.add("on");
+//   } else {
+//     sideBtn.classList.remove("on");
+//   }
+// });
 
 //con3
 // let con3ul = document.querySelector(".con3 .wrap ul");

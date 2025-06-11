@@ -26,7 +26,7 @@ body {
   height: 100vh;
 }
 
-/* con1 */
+/* section0 */
 #section0 {
   width: 100%;
 }
@@ -34,13 +34,13 @@ body {
   width: 100%;
 }
 
-/* header */
 header {
   width: 100%;
   background: #fff;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 header .headerWrap {
   width: 100%;
@@ -49,39 +49,39 @@ header .headerWrap {
   display: flex;
   justify-content: space-between;
 }
-.headerWrap .logo {
+header .headerWrap .logo {
   width: 200px;
   height: 20px;
 }
-.headerWrap .logo img {
+header .headerWrap .logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.headerWrap .logo img:nth-child(1) {
+header .headerWrap .logo img:nth-child(1) {
   display: none;
 }
-.headerWrap .gnb > ul {
+header .headerWrap .gnb > ul {
   display: flex;
   gap: 50px;
 }
-.headerWrap .gnb > ul li a {
+header .headerWrap .gnb > ul li a {
   font-family: HalvarBreit;
   color: #000;
   text-align: center;
 }
-.headerWrap .gnb > ul > li {
+header .headerWrap .gnb > ul > li {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.headerWrap .gnb > ul > li > a > span {
+header .headerWrap .gnb > ul > li > a > span {
   padding: 0 0 20px 0;
   display: inline;
   position: relative;
   /* border-bottom: 3px solid #144835; */
 }
-.headerWrap .gnb > ul > li > a > span::after {
+header .headerWrap .gnb > ul > li > a > span::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -93,21 +93,38 @@ header .headerWrap {
   transform-origin: left;
   transition: 0.3s;
 }
-.headerWrap .gnb > ul > li > a > span:hover:after {
+header.headerWrap .gnb > ul > li > a > span:hover:after {
   width: 100%;
   transform: scaleX(1);
 }
-.headerWrap .gnb ul li .sub_gnb .two_dep {
+header .headerWrap .gnb ul li .sub_gnb .two_dep {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.headerWrap .gnb ul li .sub_gnb .two_dep > li {
+header .headerWrap .gnb ul li .sub_gnb .two_dep > li {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.headerWrap .gnb ul li .sub_gnb .two_dep > li > ul {
+header .headerWrap .gnb ul li .sub_gnb .two_dep > li > ul {
   display: flex;
   flex-direction: column;
+}
+
+#section0 .con,
+#section0 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#section0 .con {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#section0 .con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

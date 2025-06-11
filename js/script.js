@@ -3,6 +3,8 @@ $("#fullpage").fullpage({
   navigation: true,
 });
 
+//header
+
 // header
 // let header = document.querySelector("header");
 // let logo = document.querySelector("header .logo");

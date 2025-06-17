@@ -4,6 +4,17 @@ $("#fullpage").fullpage({
 });
 
 //header
+let header = document.querySelector("header");
+
+header.onmouseenter = function () {
+  // this.style.backgroundColor = "#fff";
+  this.classList.add("on");
+};
+
+header.onmouseleave = function () {
+  // this.style.backgroundColor = "transparent";
+  this.classList.remove("on");
+};
 
 // header
 // let header = document.querySelector("header");

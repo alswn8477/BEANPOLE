@@ -5,16 +5,22 @@ $("#fullpage").fullpage({
 
 //header
 let header = document.querySelector("header");
+let ul = document.querySelectorAll(".gnb ul");
+let gnb = document.querySelector(".gnb");
+let logo = document.querySelector(".logo");
 
-header.onmouseenter = function () {
-  // this.style.backgroundColor = "#fff";
-  this.classList.add("on");
-};
-
-header.onmouseleave = function () {
-  // this.style.backgroundColor = "transparent";
-  this.classList.remove("on");
-};
+ul.forEach(function (oneDep) {
+  oneDep.addEventListener("mouseenter", function () {
+    header.classList.add("on");
+    gnb.classList.add("on");
+    logo.classList.add("on");
+  });
+  oneDep.addEventListener("mouseleave", function () {
+    header.classList.remove("on");
+    gnb.classList.remove("on");
+    logo.classList.remove("on");
+  });
+});
 
 // header
 // let header = document.querySelector("header");

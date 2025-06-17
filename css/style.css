@@ -61,8 +61,12 @@ header .headerWrap .logo img {
   height: 100%;
   object-fit: cover;
 }
-header .headerWrap .logo img:nth-child(1) {
+header .headerWrap .logo img:nth-child(2),
+header .headerWrap .logo.on img:nth-child(1) {
   display: none;
+}
+header .headerWrap .logo.on img:nth-child(2) {
+  display: block;
 }
 header .headerWrap .gnb > ul {
   display: flex;
@@ -70,8 +74,11 @@ header .headerWrap .gnb > ul {
 }
 header .headerWrap .gnb > ul li a {
   font-family: HalvarBreit;
-  color: #000;
+  color: #fff;
   text-align: center;
+}
+header .headerWrap .gnb.on > ul li a {
+  color: #000;
 }
 header .headerWrap .gnb > ul > li {
   display: flex;
@@ -99,6 +106,12 @@ header .headerWrap .gnb > ul > li > a > span::after {
 header.headerWrap .gnb > ul > li > a > span:hover:after {
   width: 100%;
   transform: scaleX(1);
+}
+header .headerWrap .gnb ul li .sub_gnb {
+  display: none;
+}
+header .headerWrap .gnb.on ul li .sub_gnb {
+  display: block;
 }
 header .headerWrap .gnb ul li .sub_gnb .two_dep {
   display: flex;

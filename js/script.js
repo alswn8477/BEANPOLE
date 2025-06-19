@@ -15,7 +15,7 @@ ul.forEach(function (oneDep) {
     gnb.classList.add("on");
     logo.classList.add("on");
   });
-  oneDep.addEventListener("mouseleave", function () {
+  header.addEventListener("mouseleave", function () {
     header.classList.remove("on");
     gnb.classList.remove("on");
     logo.classList.remove("on");
